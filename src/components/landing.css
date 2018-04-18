@@ -1,0 +1,47 @@
+.landing {
+  min-height: 100%;
+  
+}
+
+.content__textbox p {
+  font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.content__header__top {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3em;
+}
+
+.content__header__bottom {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+}
+
+.content__header__bottom__small {
+  font-size: 2em;
+}
+
+.content__header__bottom__large {
+  font-size: 3em;
+}
+
+.content__button {
+  margin: 15px 0px 15px 0px;
+}
+
+.content :global(a.links__button) {
+  text-decoration: none;
+  border: none;
+  background: #239999;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
