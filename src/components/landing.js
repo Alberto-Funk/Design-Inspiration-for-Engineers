@@ -5,7 +5,7 @@ import './landing.css';
 const Landing = () => (
   <div className="landing">
     <div className="header">
-      <div className="header__image"><img src="/images/logo.png" alt="Design Inspiration for Engineers" /></div>
+      <img src="/images/logo.png" alt="Design Inspiration for Engineers" className="header__img" />
     </div>
     <div className="content">
       <div className="content__textbox">

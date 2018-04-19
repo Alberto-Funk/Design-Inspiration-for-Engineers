@@ -13,22 +13,23 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 0px 10px 0px;
+  border: 3px solid orange;
 }
 
-.header__image {
-  display: flex;
-  align-items: center;
-  border: 3px solid orange;
+.header img {
+  max-width: 100%;
+  height: auto;
 }
 
 .content {
     margin-top: 40px;
+    border: 3px solid green;
 }
 
 .content__textbox p {
     font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 20px;
     border: 3px solid green;
 }
