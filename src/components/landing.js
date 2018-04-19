@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'react-router-dom';
 import './landing.css';
 
 const Landing = () => (
@@ -16,6 +17,11 @@ const Landing = () => (
         <p>
           To contribute, please email designinspirationforengineers@gmail.com.
         </p>
+      </div>
+      <div>
+          <Link to='/General'>General</Link>
+          <Link to='/Colors'>Colors</Link>
+          <Link to='/Fonts'>Fonts</Link>
       </div>
     </div>
   </div>
