@@ -1,25 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
 
-const Breadcrumbs = ({ location }) => {
-  const crumbs = location.pathname.split('/').slice(1).filter(crumb => !!crumb).map((crumb, i, loaf) => {
-    const text = (crumb.charAt(0).toUpperCase() + crumb.slice(1));
-    const link = `/${loaf.slice(0, (i + 1)).join('/')}`;
-    return { text, link };
-  });
-
+const Breadcrumbs = () => <Route path="*" render={props => {
+  const parts = props.location.pathname.split("/");
+  const place = parts[parts.length-1];
   return (
-    <ul className="breadcrumbs">
-      {crumbs.map((crumb, i) => {
-        const key = i + crumb.text;
-        const needsLink = crumb.link !== location.pathname;
-        return (
-          <li key={key}>
-            {needsLink ? <Link to={crumb.link}>{crumb.text}</Link> : crumb.text}
-          </li>);
-      })}
-
+    <div>
+      <p className="breadcrumbs">/{place}</p>
       <style jsx scoped>
         {`
         .breadcrumbs {
@@ -33,21 +20,11 @@ const Breadcrumbs = ({ location }) => {
           padding: 6px 20px;
           border-radius: 4px;
         }
-        .breadcrumbs li {
-          display: flex;
-          align-items: center;
-        }
-        li :global(a) {
-          color: #000;
-          text-decoration: none;
-        }
-      `}
+        `}
       </style>
-    </ul>);
-};
+    </div>
+  )
+}} />
 
-const mapStateToProps = state => ({
-  location: state.router.location,
-});
+export default Breadcrumbs;
 
-export default connect(mapStateToProps, {})(Breadcrumbs);

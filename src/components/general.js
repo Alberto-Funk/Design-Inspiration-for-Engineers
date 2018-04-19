@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../layout';
+import Layout from './layout';
 
 
 const General = props => (
@@ -16,11 +16,20 @@ const General = props => (
     </div>
     <style jsx scoped>
       {`
-    .root {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+      .root {
+        background: #ffffff;
+        max-width: 1440px;
+        margin: 0 auto;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 4px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;        
+      }
     `}
     </style>
   </Layout>
