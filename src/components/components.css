@@ -16,14 +16,10 @@
 
   .content__links{
     display: flex;
-    background: #fff;
     list-style-type: none;
     margin: 5px;
     padding: 0px 5px;
     align-items: center;
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
-    border-radius: 4px;
   }
 
   .content__links :global(a){
@@ -34,7 +30,6 @@
   .content__link {
     width: 100%;
     margin: 0px 4px;
-    /* padding: 0px 4px 0px 4px; */
   }
 
   .content__linkDiv {
@@ -42,6 +37,7 @@
     width: 100%;
     padding: 4px 0px;
     color: #0066cc;
+    background: aliceblue;
     border-radius: 4px;
     transition: all .3s;
     align-content: center;
