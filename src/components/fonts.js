@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './layout';
-
+import './components.css';
 
 const Fonts = props => (
   <Layout>
@@ -9,29 +9,14 @@ const Fonts = props => (
         <h1>Font Inspiration</h1>
       </header>
       <section className="content">
-        <section className="links">
-          <p>links here</p>
+        <section className="content__links">
+          <a href="https://www.typewolf.com/" className="content__link"><div className="content__linkDiv">Typewolf</div></a>
+          <a href="https://fontpair.co/" className="content__link"><div className="content__linkDiv">Font Pair</div></a>
+          <a href="https://www.reliablepsd.com/ultimate-google-font-pairings/" className="content__link"><div className="content__linkDiv">Google Font Pairings</div></a>
+          <a href="https://fontsinuse.com/" className="content__link"><div className="content__linkDiv">Fonts In Use</div></a>
         </section>
       </section>
     </div>
-    <style jsx scoped>
-      {`
-      .root {
-        background: #ffffff;
-        max-width: 1440px;
-        margin: 0 auto;
-        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 4px;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;        
-      }
-    `}
-    </style>
   </Layout>
 );
 

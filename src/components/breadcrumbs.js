@@ -10,7 +10,7 @@ const Breadcrumbs = () => <Route path="*" render={props => {
       <style jsx scoped>
         {`
         .breadcrumbs {
-          border-left: 4px solid #249999;
+          border-left: 4px solid #0066cc;
           list-style-type: none;
           margin: 0;
           display: flex;

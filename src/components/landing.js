@@ -14,10 +14,10 @@ const Landing = () => (
           To contribute, please email designinspirationforengineers@gmail.com.
         </p>
       </div>
-      <div content__links>
-          <Link to='/General'>General</Link>
-          <Link to='/Colors'>Colors</Link>
-          <Link to='/Fonts'>Fonts</Link>
+      <div className="content__links">
+          <Link to='/General' className="content__link"><div className="content__linkDiv">General</div></Link>
+          <Link to='/Colors' className="content__link"><div className="content__linkDiv">Colors</div></Link>
+          <Link to='/Fonts' className="content__link"><div className="content__linkDiv">Fonts</div></Link>
       </div>
     </div>
   </div>
